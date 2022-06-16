@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* 
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* responsive media */
+@media (min-width: 1400px) and (max-width: 1919.5px) {
+    /* .bg-body {
+        background-image: url("../img/bg-body-1440px.png") !important;
+        background-repeat: no-repeat;
+    } */
+}
+@media (min-width: 1200px) and (max-width: 1399.5px) {
+    .bg-body {
+        top: 630px !important;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199.5px) {
+    /* background body */
+
+    .bg-body {
+        top: 560px !important;
+        height: 130% !important;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.5px) {
+    /* background body */
+
+    .bg-body {
+        background-image: url("../img/bg-body-986px.png") !important;
+
+        /* background-repeat: no-repeat !important; */
+        top: 1150px !important;
+        height: 180% !important;
+    }
+}
+@media (min-width: 576px) and (max-width: 767.5px) {
+    /* background body */
+
+    .bg-body {
+        top: 1000px !important;
+        height: 170% !important;
+    }
+}
+@media (min-width:200px) and (max-width: 575.5px) {
+    .bg-body {
+        /* background-image: url("../img/bg-body-576px.png") !important; */
+        /* z-index: 1 !important; */
+        top: 840px !important;
+        height: 170% !important;
+    }
+}
+
+/* navbar */
+.navbar {
+    background-color: #ffffff !important;
+}
+
+nav ul li a {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+
+/* Hero Content */
+.rec {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(94, 9, 173);
+}
+
+.sub-title {
+    /* width: 513px; */
+    font-family: 'Poppins', sans-serif !important;
+    letter-spacing: 2px;
+}
+
+.btn-order-lihat {
+    margin-top: 24px;
+    padding: 20px;
+    background-color: #F6B50E;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 0;
+    transition: .2s;
+}
+.btn-order-lihat:hover {
+    background-color: #f6a90e;
+    color: #ffffff;
+}
+
+
+/* background body */
+.bg-body {
+    position: absolute;
+    z-index: -2;
+    top: 1180px;
+    width: 100%;
+    height: auto;
+}
+
+
+/* Masalah section */
+.masalah {
+    background-color: #FFF7DD;
+    border-radius: 15px;
+    margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    letter-spacing: 1px;
+}
+
+.card-masalah {
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    border: 3px solid #FAC213 !important;
+}
+
+.card-content-masalah {
+    padding: 30px;
+}
+
+.title-masalah {
+    font-size: 22px;
+}
+
+.hr-masalah {
+    width: 50px;
+    height: 3px;
+    background-color: #212529;
+    border-radius: 10px;
+}
+
+.content-masalah {
+    font-size: 16px;
+    text-align: justify;
+}
+
+.ul-masalah {
+    line-height: 150%;
+}
+
+
+/* Show Produk */
+.show-produk {
+    margin-top: 100px;
+}
+
+.sp-subtitle {
+    font-size: 18px;
+    font-weight: 500;
+    color: #3f3f3f;
+}
+
+.btn-pilih-tipe {
+    width: 100% !important;
+    background-color: #7900FF;
+    color: #ffffff;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    transition: .2s;
+    cursor: pointer;
+}
+.btn-pilih-tipe:hover {
+    background-color: #ffffff;
+    border: 1px solid #7900FF;
+    color: #7900FF
+}
+
+.btn-order {
+    width: 100% !important;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+/* Promo section */
+.promo-section {
+    margin-top: 130px;
+}
+
+.promo-title {
+    /* width: ; */
+    height: auto;
+    padding: 25px 50px;
+    background-color: #F6B50E;
+    color: #ffffff;
+    border-radius: 15px;
+}
+
+.megaphone {
+    position: absolute;
+    left: 1;
+    top: 1;
+    margin-top: -50px;
+    margin-left: 20px;
+}
+
+.font-cd {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.day-wrapper, .jam-wrapper, .menit-wrapper, .detik-wrapper {
+    padding: 15px 30px 10px 30px;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.day-wrapper-sm, .jam-wrapper-sm, .menit-wrapper-sm, .detik-wrapper-sm {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.hari, .jam, .menit, .detik, .hari1, .jam1, .menit1, .detik1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.promo-wrapper {
+    border-radius: 15px;
+    padding: 15px;
+    background-color: #ffffff;
+}
+
+.card-promo1 {
+    background-color: #7900FF;
+}
+.card-promo2 {
+    background-color: #548CFF;
+}
+
+.text-promo {
+    color: #ffffff;
+    font-size: 38px;
+}
+
+.promo-note {
+    color: #ffffff;
+}
+
+.label-harga-promo1 {
+    font-size: 30px;
+    color: #f0f0f0;
+}
+.line-through {
+    color: #ff0000;
+    text-decoration: line-through;
+}
+
+.label-harga-promo {
+    font-size: 38px;
+    color: #ffffff;
+}
+
+.btn-order-promo1 {
+    width: 100% !important;
+    background-color: #ffffff;
+    color: #7900FF;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    transition: .2s;
+    cursor: pointer;
+}
+.btn-order-promo1:hover {
+    background-color: #7900FF;
+    border: 1px solid #ffffff;
+    color: #ffffff
+}
+
+.btn-order-promo2 {
+    width: 100% !important;
+    background-color: #ffffff;
+    color: #548CFF;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    transition: .2s;
+    cursor: pointer;
+}
+.btn-order-promo2:hover {
+    background-color: #548CFF;
+    border: 1px solid #ffffff;
+    color: #ffffff
+}
+
+
+/* scroll to top */
+.scrollToTop {
+    width: 50px !important;
+    height: 50px !important;
+    background-color: #F6B50E !important;
+    color: #ffffff !important;
+    transition: .2s;
+}
+.scrollToTop:hover {
+    background-color: #ffffff !important;
+    color: #F6B50E !important;
+}
