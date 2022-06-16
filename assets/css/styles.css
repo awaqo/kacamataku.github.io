@@ -49,12 +49,15 @@ font-family: 'Poppins', sans-serif;
         height: 170% !important;
     }
 }
-@media (min-width:200px) and (max-width: 575.5px) {
-    .bg-body {
-        /* background-image: url("../img/bg-body-576px.png") !important; */
-        /* z-index: 1 !important; */
-        top: 840px !important;
-        height: 170% !important;
+@media (min-width:300px) and (max-width: 575.5px) {
+    /* .bg-body-mobile {
+        top: 100% !important;
+        height: 100% !important;
+    } */
+
+    .bg-footer {
+        top: 740% !important;
+        height: 120% !important;
     }
 }
 
@@ -107,6 +110,13 @@ nav ul li a {
     height: auto;
 }
 
+.bg-body-mobile {
+    position: absolute;
+    z-index: -1;
+    top: 335%;
+    width: 100%;
+    height: auto;
+}
 
 /* Masalah section */
 .masalah {
@@ -183,6 +193,7 @@ nav ul li a {
     padding: 20px;
     font-size: 18px;
     font-weight: 700;
+    border-radius: 5px !important;
 }
 
 
@@ -297,6 +308,109 @@ nav ul li a {
     background-color: #548CFF;
     border: 1px solid #ffffff;
     color: #ffffff
+}
+
+
+/* Testimoni section */
+.testimoni-section {
+    margin-top: 100px;
+}
+
+.lg-prev{
+    height: 60px;
+    width: 60px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .2s;
+}
+.lg-prev:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.lg-next{
+    height: 60px;
+    width: 60px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.lg-next:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.prev{
+    height: 60px;
+    width: 60px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .2s;
+}
+.prev:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.next{
+    height: 60px;
+    width: 60px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.next:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Metode pembayaran */
+.metode-section {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.mp-title-wrapper {
+    background-color: #F6B50E;
+    padding: 15px 10px 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mp-wrapper {
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 15px;
+}
+
+.bg-footer {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 550%;
+    width: 100%;
+    height: auto;
 }
 
 

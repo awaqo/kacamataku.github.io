@@ -1,4 +1,24 @@
 $(document).ready(function () {
+    $('.multiple-items').slick({
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        slidesToShow: 3,
+        slidesToScroll: 2,
+        prevArrow: $('.lg-prev'),
+        nextArrow: $('.lg-next')
+      });
+
+    $('.single-item').slick({
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        prevArrow: $('.prev'),
+        nextArrow: $('.next')
+    });  
+});
+
+$(document).ready(function () {
     var main_url ="https://api.whatsapp.com/send?phone=6289677464708&text=Hallo%20saya%20ingin%20membeli%20kacamata%20dengan%20tipe%20";
     var second_url = "%20dan%20warna%20frame%20"
     var tipe_kacamata = "";
@@ -78,7 +98,7 @@ $(document).ready(function () {
             $("#order_link").addClass("btn-success");
             $("#order_link").removeClass("disabled");
             $("#order_link").removeClass("text-muted");
-            $("#order_link").removeClass("btn-outline-success");
+            $("#order_link").removeClass("btn-secondary");
         }
         
         $("#order_link").attr("href", main_url + temp_tipe_kacamata + second_url + temp_frame_kacamata);
@@ -129,7 +149,7 @@ $(document).ready(function () {
             $("#order_link").addClass("btn-success");
             $("#order_link").removeClass("disabled");
             $("#order_link").removeClass("text-muted");
-            $("#order_link").removeClass("btn-outline-success");
+            $("#order_link").removeClass("btn-secondary");
         }
         
         $("#order_link").attr("href", main_url + temp_tipe_kacamata + second_url + temp_frame_kacamata);
