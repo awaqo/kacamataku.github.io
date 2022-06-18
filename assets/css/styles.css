@@ -59,6 +59,7 @@ font-family: 'Poppins', sans-serif;
 
     .bg-footer {
         top: 6850px !important;
+        height: 100% !important;
     }
 }
 

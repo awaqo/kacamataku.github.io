@@ -1,3 +1,5 @@
+AOS.init();
+
 $(document).ready(function () {
     $('.multiple-items').slick({
         infinite: true,
