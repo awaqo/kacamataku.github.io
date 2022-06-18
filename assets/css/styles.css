@@ -53,13 +53,13 @@ font-family: 'Poppins', sans-serif;
 }
 @media (min-width:300px) and (max-width: 575.5px) {
     .bg-body-mobile {
-        top: 3050px !important;
+        top: 3150px !important;
         height: 100% !important;
     }
 
     .bg-footer {
         top: 6850px !important;
-        height: 100% !important;
+        /* height: 100% !important; */
     }
 }
 
