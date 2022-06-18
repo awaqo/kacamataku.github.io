@@ -8,6 +8,8 @@ font-family: 'Poppins', sans-serif;
 
 * {
     font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 /* responsive media */
@@ -56,8 +58,7 @@ font-family: 'Poppins', sans-serif;
     } */
 
     .bg-footer {
-        top: 740% !important;
-        height: 120% !important;
+        top: 6850px !important;
     }
 }
 
@@ -312,9 +313,9 @@ nav ul li a {
 
 
 /* Testimoni section */
-.testimoni-section {
+/* .testimoni-section {
     margin-top: 100px;
-}
+} */
 
 .lg-prev{
     height: 60px;
@@ -385,9 +386,13 @@ nav ul li a {
 }
 
 /* Metode pembayaran */
+.metode {
+    margin-top: 100px !important;
+    /* margin-bottom: 50px; */
+}
+
 .metode-section {
     margin-top: 100px;
-    margin-bottom: 50px;
 }
 
 .mp-title-wrapper {
@@ -406,11 +411,14 @@ nav ul li a {
 
 .bg-footer {
     position: absolute;
+    background-image: url('../img/bg-footer.png');
+    background-size: cover;
+    background-repeat: no-repeat;
     z-index: -1;
     left: 0;
-    top: 550%;
+    top: 4100px;
     width: 100%;
-    height: auto;
+    height: 130%;
 }
 
 
