@@ -76,7 +76,7 @@ $(document).ready(function () {
             $("#tipe_kacamata_4").addClass("btn-outline-dark");
             $("#tipe_kacamata_4").removeClass("btn-dark");
 
-        } else if (tipe_kacamata == "Photocromic & Radiasi") {
+        } else if (tipe_kacamata == "PhotocromicnRadiasi") {
             $("#harga_satuan").text("Rp 110.000");
             $("#review").text("741 Reviews");                
             $("#star_review").html("<li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star-half-stroke'></i></li>")
