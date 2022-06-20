@@ -194,11 +194,11 @@ $(document).ready(function () {
             $("#frame_kacamata_3").addClass("btn-dark");
         }
         if (frame_kacamata == "Black Silver") {
-            $("#produk_image").attr("src", "assets/img/kacamata_silver.png");
+            $("#produk_image").attr("src", "assets/img/produk/kacamata_silver.png");
         } else if (frame_kacamata == "Black Gold") {
-            $("#produk_image").attr("src", "assets/img/kacamata_gold.png");
+            $("#produk_image").attr("src", "assets/img/produk/kacamata_gold.png");
         } else if (frame_kacamata == "Black") {
-            $("#produk_image").attr("src", "assets/img/kacamata_black.png");
+            $("#produk_image").attr("src", "assets/img/produk/kacamata_black.png");
         }
         
         var temp_tipe_kacamata = tipe_kacamata;
