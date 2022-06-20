@@ -436,6 +436,7 @@ nav ul li a {
 
 .mp-wrapper {
     background-color: #ffffff;
+    height: 100px;
     padding: 20px 30px;
     border-radius: 15px;
 }

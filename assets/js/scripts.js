@@ -29,9 +29,9 @@ $(document).ready(function () {
     $(".tipe_kacamata").click(function () {
         tipe_kacamata = $(this).val();
         if (tipe_kacamata == "Photocromic") {
-            $("#harga_satuan").text("Rp 75.000");
-            $('#star_review').html("<li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star-half-stroke'></i></li>")
-            $("#review").text("876 Reviews");
+            // $("#review").text("-- Reviews");
+            $("#harga_satuan").text("Rp 99.000");
+            // $('#star_review').html("<li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star-half-stroke'></i></li>")
             $("#tipe_kacamata_1").removeClass("btn-outline-dark");
             $("#tipe_kacamata_1").addClass("btn-dark");
 
@@ -45,9 +45,9 @@ $(document).ready(function () {
             $("#tipe_kacamata_4").removeClass("btn-dark");
             
         } else if (tipe_kacamata == "Radiasi") {
-            $("#harga_satuan").text("Rp 75.000");
-            $("#review").text("671 Reviews");                
-            $("#star_review").html("<li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-regular fa-star'></i></li>")
+            // $("#review").text("-- Reviews");
+            $("#harga_satuan").text("Rp 99.000");              
+            // $("#star_review").html("<li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star-half-stroke'></i></li>")
             $("#tipe_kacamata_1").addClass("btn-outline-dark");
             $("#tipe_kacamata_1").removeClass("btn-dark");
             
@@ -61,9 +61,9 @@ $(document).ready(function () {
             $("#tipe_kacamata_4").removeClass("btn-dark");
             
         } else if (tipe_kacamata == "Minus") {
-            $("#harga_satuan").text("Rp 155.000");
-            $("#review").text("525 Reviews");                
-            $("#star_review").html("<li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star-half-stroke'></i></li>")
+            $("#harga_satuan").text("Rp 175.000");
+            // $("#review").text("525 Reviews");                
+            // $("#star_review").html("<li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star-half-stroke'></i></li>")
             $("#tipe_kacamata_1").addClass("btn-outline-dark");
             $("#tipe_kacamata_1").removeClass("btn-dark");
             
@@ -78,8 +78,8 @@ $(document).ready(function () {
 
         } else if (tipe_kacamata == "PhotocromicnRadiasi") {
             $("#harga_satuan").text("Rp 110.000");
-            $("#review").text("741 Reviews");                
-            $("#star_review").html("<li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star-half-stroke'></i></li>")
+            // $("#review").text("741 Reviews");              
+            // $("#star_review").html("<li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star-half-stroke'></i></li>")
             $("#tipe_kacamata_1").addClass("btn-outline-dark");
             $("#tipe_kacamata_1").removeClass("btn-dark");
 
@@ -95,6 +95,63 @@ $(document).ready(function () {
         
         var temp_tipe_kacamata = tipe_kacamata;
         var temp_frame_kacamata = frame_kacamata;
+
+        // review berbeda tiap tipe & warna
+        // photocromic
+        if (temp_tipe_kacamata == "Photocromic" && temp_frame_kacamata == "Black Silver") {
+            $("#review").text("514 Reviews");
+            $('#star_review').html("<li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star-half-stroke'></i></li>")
+        } 
+        else if (temp_tipe_kacamata == "Photocromic" && temp_frame_kacamata == "Black") {
+            $("#review").text("976 Reviews");
+            $('#star_review').html("<li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li>")
+        }
+        else if (temp_tipe_kacamata == "Photocromic" && temp_frame_kacamata == "Black Gold") {
+            $("#review").text("721 Reviews");
+            $('#star_review').html("<li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star-half-stroke'></i></li>")
+        }
+
+        // radiasi
+        if (temp_tipe_kacamata == "Radiasi" && temp_frame_kacamata == "Black Silver") {
+            $("#review").text("915 Reviews");
+            $('#star_review').html("<li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li>")
+        } 
+        else if (temp_tipe_kacamata == "Radiasi" && temp_frame_kacamata == "Black") {
+            $("#review").text("502 Reviews");
+            $('#star_review').html("<li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star-half-stroke'></i></li>")
+        }
+        else if (temp_tipe_kacamata == "Radiasi" && temp_frame_kacamata == "Black Gold") {
+            $("#review").text("694 Reviews");
+            $('#star_review').html("<li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star-half-stroke'></i></li>")
+        }
+
+        // minus
+        if (temp_tipe_kacamata == "Minus" && temp_frame_kacamata == "Black Silver") {
+            $("#review").text("190 Reviews");
+            $('#star_review').html("<li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-regular fa-star'></i></li>")
+        } 
+        else if (temp_tipe_kacamata == "Minus" && temp_frame_kacamata == "Black") {
+            $("#review").text("312 Reviews");
+            $('#star_review').html("<li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star-half-stroke'></i></li>")
+        }
+        else if (temp_tipe_kacamata == "Minus" && temp_frame_kacamata == "Black Gold") {
+            $("#review").text("211 Reviews");
+            $('#star_review').html("<li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li>")
+        }
+
+        // 2in1
+        if (temp_tipe_kacamata == "PhotocromicnRadiasi" && temp_frame_kacamata == "Black Silver") {
+            $("#review").text("811 Reviews");
+            $('#star_review').html("<li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star-half-stroke'></i></li>")
+        } 
+        else if (temp_tipe_kacamata == "PhotocromicnRadiasi" && temp_frame_kacamata == "Black") {
+            $("#review").text("781 Reviews");
+            $('#star_review').html("<li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star-half-stroke'></i></li>")
+        }
+        else if (temp_tipe_kacamata == "PhotocromicnRadiasi" && temp_frame_kacamata == "Black Gold") {
+            $("#review").text("981 Reviews");
+            $('#star_review').html("<li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li>")
+        }
         
         if (tipe_kacamata != "" && frame_kacamata != "") {
             $("#order_link").addClass("btn-success");
@@ -146,6 +203,63 @@ $(document).ready(function () {
         
         var temp_tipe_kacamata = tipe_kacamata;
         var temp_frame_kacamata = frame_kacamata;
+
+        // review berbeda tiap tipe & warna
+        // photocromic
+        if (temp_tipe_kacamata == "Photocromic" && temp_frame_kacamata == "Black Silver") {
+            $("#review").text("514 Reviews");
+            $('#star_review').html("<li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star-half-stroke'></i></li>")
+        } 
+        else if (temp_tipe_kacamata == "Photocromic" && temp_frame_kacamata == "Black") {
+            $("#review").text("976 Reviews");
+            $('#star_review').html("<li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li>")
+        }
+        else if (temp_tipe_kacamata == "Photocromic" && temp_frame_kacamata == "Black Gold") {
+            $("#review").text("721 Reviews");
+            $('#star_review').html("<li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star-half-stroke'></i></li>")
+        }
+
+        // radiasi
+        if (temp_tipe_kacamata == "Radiasi" && temp_frame_kacamata == "Black Silver") {
+            $("#review").text("915 Reviews");
+            $('#star_review').html("<li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li>")
+        } 
+        else if (temp_tipe_kacamata == "Radiasi" && temp_frame_kacamata == "Black") {
+            $("#review").text("502 Reviews");
+            $('#star_review').html("<li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star-half-stroke'></i></li>")
+        }
+        else if (temp_tipe_kacamata == "Radiasi" && temp_frame_kacamata == "Black Gold") {
+            $("#review").text("694 Reviews");
+            $('#star_review').html("<li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star-half-stroke'></i></li>")
+        }
+
+        // minus
+        if (temp_tipe_kacamata == "Minus" && temp_frame_kacamata == "Black Silver") {
+            $("#review").text("190 Reviews");
+            $('#star_review').html("<li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-regular fa-star'></i></li>")
+        } 
+        else if (temp_tipe_kacamata == "Minus" && temp_frame_kacamata == "Black") {
+            $("#review").text("312 Reviews");
+            $('#star_review').html("<li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star-half-stroke'></i></li>")
+        }
+        else if (temp_tipe_kacamata == "Minus" && temp_frame_kacamata == "Black Gold") {
+            $("#review").text("211 Reviews");
+            $('#star_review').html("<li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li>")
+        }
+
+        // 2in1
+        if (temp_tipe_kacamata == "PhotocromicnRadiasi" && temp_frame_kacamata == "Black Silver") {
+            $("#review").text("811 Reviews");
+            $('#star_review').html("<li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star-half-stroke'></i></li>")
+        } 
+        else if (temp_tipe_kacamata == "PhotocromicnRadiasi" && temp_frame_kacamata == "Black") {
+            $("#review").text("781 Reviews");
+            $('#star_review').html("<li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star-half-stroke'></i></li>")
+        }
+        else if (temp_tipe_kacamata == "PhotocromicnRadiasi" && temp_frame_kacamata == "Black Gold") {
+            $("#review").text("981 Reviews");
+            $('#star_review').html("<li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li><li class='list-inline-item text-success'><i class='fa-solid fa-star'></i></li>")
+        }
         
         if (tipe_kacamata != "" && frame_kacamata != "") {
             $("#order_link").addClass("btn-success");
